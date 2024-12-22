@@ -1,0 +1,961 @@
+{
+  "metadata": {
+    "program_info": {
+      "last_updated": "2024-12-09",
+      "total_launches": 102,
+      "primary_organization": "ISRO",
+      "country": "India",
+      "program_start": "1979"
+    },
+    "launch_facilities": {
+      "primary_center": {
+        "name": "Satish Dhawan Space Centre SHAR",
+        "location": "Sriharikota, India",
+        "coordinates": "13.7200° N, 80.2300° E",
+        "launch_complexes": [
+          {
+            "name": "First Launch Pad (FLP)",
+            "status": "Active",
+            "supported_vehicles": [
+              "PSLV",
+              "GSLV",
+              "SSLV",
+              "RLV-TD",
+              "SLV",
+              "ASLV"
+            ],
+            "first_launch": "1979",
+            "total_launches": 75
+          },
+          {
+            "name": "Second Launch Pad (SLP)",
+            "status": "Active",
+            "supported_vehicles": ["PSLV", "GSLV", "LVM3"],
+            "first_launch": "2005",
+            "total_launches": 25
+          },
+          {
+            "name": "Third Launch Pad (TLP)",
+            "status": "Under Development",
+            "supported_vehicles": ["NGLV", "Future Heavy Launchers"],
+            "planned_completion": "2030"
+          }
+        ]
+      },
+      "upcoming_facilities": [
+        {
+          "name": "Kulasekarapattinam Spaceport",
+          "location": "Tamil Nadu, India",
+          "status": "Under Development",
+          "supported_vehicles": ["SSLV"],
+          "planned_completion": "2025"
+        }
+      ]
+    },
+    "vehicle_generations": {
+      "test_vehicles": {
+        "vehicle": "RLV-TD",
+        "period": "2016-present",
+        "description": "Reusable Launch Vehicle Technology Demonstrator"
+      },
+      "first_generation": {
+        "vehicle": "SLV",
+        "period": "1979-1983",
+        "description": "First indigenous launch capability"
+      },
+      "second_generation": {
+        "vehicle": "ASLV",
+        "period": "1987-1994",
+        "description": "Augmented capability"
+      },
+      "third_generation": {
+        "vehicle": "PSLV",
+        "period": "1993-present",
+        "description": "Reliable workhorse launcher"
+      },
+      "fourth_generation": {
+        "vehicle": "GSLV",
+        "period": "2001-present",
+        "description": "Geosynchronous capability"
+      },
+      "fifth_generation": {
+        "vehicle": ["LVM3", "HLVM"],
+        "period": "2014-present",
+        "description": "Heavy lift capability"
+      },
+      "sixth_generation": {
+        "vehicles": ["SSLV", "NGLV"],
+        "period": "2022-future",
+        "description": "Modern modular launchers"
+      }
+    },
+    "program_statistics": {
+      "overall_performance": {
+        "successful": 82,
+        "failed": 10,
+        "partial_failures": 5,
+        "total_launches": 97,
+        "success_rate": 84.5
+      },
+      "vehicle_specific": {
+        "SLV": {
+          "success": 2,
+          "failure": 1,
+          "partial": 1,
+          "total": 4
+        },
+        "ASLV": {
+          "success": 1,
+          "failure": 2,
+          "partial": 1,
+          "total": 4
+        },
+        "PSLV": {
+          "success": 58,
+          "failure": 2,
+          "partial": 1,
+          "total": 61
+        },
+        "GSLV": {
+          "success": 10,
+          "failure": 4,
+          "partial": 2,
+          "total": 16
+        },
+        "LVM3": {
+          "success": 7,
+          "failure": 0,
+          "partial": 0,
+          "total": 7
+        },
+        "SSLV": {
+          "success": 2,
+          "failure": 1,
+          "partial": 0,
+          "total": 3
+        },
+        "RLV-TD": {
+          "success": 2,
+          "failure": 0,
+          "partial": 0,
+          "total": 2
+        }
+      }
+    }
+  },
+  "launch_vehicles": {
+    "SLV": {
+      "status": "Retired",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "dimensions": {
+        "height": 22,
+        "diameter": 1,
+        "mass": 17000
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": 40,
+          "altitude": 400,
+          "inclination": 45
+        }
+      },
+      "launch_history": {
+        "total_launches": 4,
+        "successes": 2,
+        "failures": 1,
+        "partial_failures": 1,
+        "first_flight": "1979-08-10",
+        "last_flight": "1983-04-17",
+        "launch_sites": ["Satish Dhawan Space Centre"]
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "First Stage",
+          "propellant_mass": 8600,
+          "engine_count": 1,
+          "engine_type": "solid",
+          "thrust": 450,
+          "specific_impulse": 253,
+          "propellant": "PBAN"
+        },
+        "second_stage": {
+          "designation": "Second Stage",
+          "propellant_mass": 3000,
+          "engine_count": 1,
+          "engine_type": "solid",
+          "thrust": 196,
+          "specific_impulse": 267,
+          "burn_time": 40,
+          "propellant": "PBAN"
+        },
+        "third_stage": {
+          "designation": "Third Stage",
+          "propellant_mass": 1000,
+          "engine_count": 1,
+          "engine_type": "solid",
+          "thrust": 61.8,
+          "specific_impulse": 277,
+          "burn_time": 45,
+          "propellant": "HEF 20"
+        },
+        "fourth_stage": {
+          "designation": "Fourth Stage",
+          "propellant_mass": 262,
+          "engine_count": 1,
+          "engine_type": "solid",
+          "thrust": 23.5,
+          "specific_impulse": 283,
+          "burn_time": 33,
+          "propellant": "HEF 20"
+        }
+      }
+    },
+    "ASLV": {
+      "status": "Retired",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "dimensions": {
+        "height": 23.5,
+        "diameter": 1,
+        "mass": 41000
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": 150,
+          "altitude": 400,
+          "inclination": 45
+        }
+      },
+      "launch_history": {
+        "total_launches": 4,
+        "successes": 1,
+        "failures": 2,
+        "partial_failures": 1,
+        "first_flight": "1987-03-24",
+        "last_flight": "1994-05-04",
+        "launch_sites": ["Satish Dhawan Space Centre"]
+      },
+      "stages": {
+        "first_stage": {
+          "engine_count": 2,
+          "engine_type": "solid",
+          "thrust": 502.6,
+          "specific_impulse": 253,
+          "burn_time": 49,
+          "propellant": "Solid"
+        },
+        "second_stage": {
+          "engine_count": 1,
+          "engine_type": "solid",
+          "thrust": 702.6,
+          "specific_impulse": 259,
+          "burn_time": 45,
+          "propellant": "Solid"
+        },
+        "third_stage": {
+          "engine_count": 1,
+          "engine_type": "solid",
+          "thrust": 304,
+          "specific_impulse": 276,
+          "burn_time": 36,
+          "propellant": "Solid"
+        },
+        "fourth_stage": {
+          "engine_count": 1,
+          "engine_type": "solid",
+          "thrust": 90.7,
+          "specific_impulse": 277,
+          "burn_time": 45,
+          "propellant": "Solid"
+        },
+        "fifth_stage": {
+          "engine_count": 1,
+          "engine_type": "solid",
+          "thrust": 35,
+          "specific_impulse": 281,
+          "burn_time": 33,
+          "propellant": "Solid"
+        }
+      }
+    },
+    "PSLV": {
+      "status": "Active",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "cost_per_launch": "18-28 million USD",
+      "variants": ["PSLV-G", "PSLV-CA", "PSLV-XL", "PSLV-DL", "PSLV-QL"],
+      "dimensions": {
+        "height": 44,
+        "diameter": 2.8,
+        "mass": {
+          "PSLV-G": 295000,
+          "PSLV-CA": 230000,
+          "PSLV-XL": 320000
+        }
+      },
+      "payload_capacity": {
+        "LEO": {
+          "PSLV-G": {
+            "mass": 3200,
+            "altitude": 400,
+            "inclination": 45
+          },
+          "PSLV-CA": {
+            "mass": 2100,
+            "altitude": 400,
+            "inclination": 45
+          },
+          "PSLV-XL": {
+            "mass": 3800,
+            "altitude": 400,
+            "inclination": 45
+          }
+        },
+        "SSO": {
+          "PSLV-G": {
+            "mass": 1600,
+            "altitude": 620
+          },
+          "PSLV-CA": {
+            "mass": 1100,
+            "altitude": 620
+          },
+          "PSLV-XL": {
+            "mass": 1750,
+            "altitude": 620
+          }
+        },
+        "Sub-GTO": {
+          "PSLV-XL": {
+            "mass": 1425,
+            "perigee": 284,
+            "apogee": 20650
+          }
+        },
+        "GTO": {
+          "PSLV-G": {
+            "mass": 1150,
+            "perigee": 200,
+            "apogee": 36000
+          },
+          "PSLV-XL": {
+            "mass": 1300,
+            "perigee": 200,
+            "apogee": 36000
+          }
+        }
+      },
+      "launch_history": {
+        "total_launches": 61,
+        "successes": 58,
+        "failures": 2,
+        "partial_failures": 1,
+        "first_flight": {
+          "PSLV-G": "1993-09-20",
+          "PSLV-CA": "2007-04-23",
+          "PSLV-XL": "2008-10-22",
+          "PSLV-DL": "2019-01-24",
+          "PSLV-QL": "2019-04-01"
+        },
+        "last_flight": {
+          "PSLV-G": "2016-09-26",
+          "PSLV-CA": "2023-07-30",
+          "PSLV-XL": "2024-12-05",
+          "PSLV-DL": "2024-01-01",
+          "PSLV-QL": "2019-12-11"
+        }
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "S139",
+          "height": 20.0,
+          "propellant_mass": 138200,
+          "powered_by": "S139",
+          "maximum_thrust": 4846.9,
+          "burn_time": 110,
+          "propellant": "HTPB"
+        },
+        "strap_on_boosters": {
+          "Boosters (PSLV-G)": {
+            "designation": "S9",
+            "number": 6,
+            "maximum_thrust": "510 Kn",
+            "burn_time": "44 Seconds",
+            "propellant": "HTPB"
+          },
+          "Boosters (PSLV-XL)": {
+            "designation": "S12 XL",
+            "number": 6,
+            "propellant_mass": 12200,
+            "total_thrust": "4221 Kn",
+            "burn_time": 70,
+            "propellant": "HTPB"
+          },
+          "Boosters (PSLV-QL)": {
+            "designation": "S12 QL",
+            "number": 4,
+            "height": 12,
+            "propellant_mass": 12200,
+            "total_thrust": "2814 Kn",
+            "burn_time": 70,
+            "propellant": "HTPB"
+          },
+          "Boosters (PSLV-DL)": {
+            "designation": "S12 DL",
+            "number": 2,
+            "height": 12,
+            "propellant_mass": 12200,
+            "total_thrust": "1407 Kn",
+            "burn_time": 70,
+            "propellant": "HTPB"
+          }
+        },
+        "second_stage": {
+          "designation": "PS2",
+          "propellant_mass": 42000,
+          "powered_by": "Vikas",
+          "maximum_thrust": 803.7,
+          "specific_impulse": 293,
+          "burn_time": 133,
+          "propellant": "N2O4/UDMH"
+        },
+        "third_stage": {
+          "designation": "PS3",
+          "propellant_mass": 7600,
+          "powered_by": "S-7",
+          "maximum_thrust": 250,
+          "burn_time": 113.5,
+          "propellant": "HTPB"
+        },
+        "fourth_stage": {
+          "designation": "PS4",
+          "propellant_mass": 2500,
+          "powered_by": "2 x L-2-5",
+          "maximum_thrust": 14.66,
+          "burn_time": 525,
+          "propellant": "MMH/MON"
+        }
+      }
+    },
+    "GSLV_Mk2": {
+      "status": "Active",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "cost_per_launch": "47 million USD",
+      "dimensions": {
+        "height": 49.13,
+        "diameter": 2.8,
+        "mass": 414750
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": 6000,
+          "altitude": 400,
+          "inclination": 28.5
+        },
+        "SSO": {
+          "mass": 3000,
+          "altitude": 620
+        },
+        "GTO": {
+          "mass": 2500,
+          "perigee": 200,
+          "apogee": 36000
+        }
+      },
+      "launch_history": {
+        "total_launches": 16,
+        "successes": 10,
+        "failures": 4,
+        "partial_failures": 2,
+        "first_flight": "2010-04-15",
+        "last_flight": "2024-02-17",
+        "notable_payloads": [
+          "INSAT series",
+          "GSAT series",
+          "South Asia Satellite",
+          "GISAT"
+        ]
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "First Stage",
+          "propellant_mass": 138200,
+          "powered_by": "1 S139 Booster",
+          "maximum_thrust": 4846.9,
+          "specific_impulse": 237,
+          "burn_time": 100,
+          "propellant": "HTPB (solid)"
+        },
+        "strap_on_boosters": {
+          "designation": "L40 Hs",
+          "number": 4,
+          "propellant_mass": 42700,
+          "powered_by": "1 GS2 Vikas 4",
+          "maximum_thrust": 3040,
+          "burn_time": 154,
+          "propellant": "N2O4 / UDMH"
+        },
+        "second_stage": {
+          "designation": "Second Stage",
+          "propellant_mass": 39500,
+          "powered_by": "1 GS2 Vikas 4",
+          "maximum_thrust": 846.8,
+          "burn_time": 139,
+          "propellant": "N2O4 / UDMH"
+        },
+        "third_stage_GSLV_Mk_I": {
+          "designation": "Third Stage (GSLV Mk I) – CUS",
+          "propellant_mass": 12800,
+          "powered_by": "1 KVD-1",
+          "maximum_thrust": 70,
+          "specific_impulse": 462,
+          "burn_time": 718,
+          "propellant": "LOX / LH2"
+        },
+        "third_stage_GSLV_Mk_II_CUS12": {
+          "designation": "Third Stage (GSLV Mk II) – CUS12",
+          "propellant_mass": 12800,
+          "powered_by": "1 CE-7.5",
+          "maximum_thrust": 75,
+          "specific_impulse": 454,
+          "burn_time": 718,
+          "propellant": "LOX / LH2"
+        },
+        "third_stage_GSLV_Mk_II_CUS15": {
+          "designation": "Third Stage (GSLV Mk II) – CUS15",
+          "propellant_mass": 15000,
+          "powered_by": "1 CE-7.5",
+          "maximum_thrust": 75,
+          "specific_impulse": 454,
+          "burn_time": 846,
+          "propellant": "LOX / LH2"
+        }
+      }
+    },
+    "LVM3": {
+      "status": "Active",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "cost_per_launch": "60 million USD",
+      "dimensions": {
+        "height": 43.43,
+        "diameter": 4,
+        "mass": 640000
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": 10000,
+          "altitude": 400,
+          "inclination": 28.5
+        },
+        "GTO": {
+          "mass": 4300,
+          "perigee": 200,
+          "apogee": 36000
+        },
+        "TLI": {
+          "mass": 3000
+        }
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "S200",
+          "type": "Solid Rocket Boosters",
+          "count": 2,
+          "height": 25,
+          "diameter": 3.2,
+          "empty_mass": 31000,
+          "gross_mass": 236000,
+          "propellant_mass": 205000,
+          "engine_type": "Solid S200",
+          "thrust": 5150,
+          "specific_impulse": 274.5,
+          "burn_time": 128,
+          "propellant": "HTPB / AP"
+        },
+        "second_stage": {
+          "designation": "L110",
+          "height": 21.39,
+          "diameter": 4.0,
+          "empty_mass": 9000,
+          "gross_mass": 125000,
+          "propellant_mass": 116000,
+          "engine_type": "Vikas",
+          "engine_count": 2,
+          "thrust": 1598,
+          "specific_impulse": 293,
+          "burn_time": 203,
+          "propellant": "UDMH / N2O4"
+        },
+        "third_stage": {
+          "designation": "C25",
+          "height": 13.545,
+          "diameter": 4.0,
+          "empty_mass": 5000,
+          "gross_mass": 33000,
+          "propellant_mass": 28000,
+          "engine_type": "CE-20",
+          "engine_count": 1,
+          "thrust": 186.36,
+          "specific_impulse": 442,
+          "burn_time": 643,
+          "propellant": "LOX / LH2"
+        }
+      },
+      "launch_history": {
+        "total_launches": 7,
+        "successes": 7,
+        "failures": 0,
+        "partial_failures": 0,
+        "first_flight": {
+          "suborbital": "2014-12-18",
+          "orbital": "2017-06-05"
+        },
+        "last_flight": "2023-07-14",
+        "launch_sites": ["Satish Dhawan SLP"]
+      }
+    },
+    "LVM3_SC": {
+      "status": "Under Development",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "dimensions": {
+        "height": 43.43,
+        "diameter": 4,
+        "mass": 640000
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": 12000,
+          "altitude": 600,
+          "inclination": 28.5
+        },
+        "GTO": {
+          "mass": 4500,
+          "perigee": 200,
+          "apogee": 36000
+        },
+        "TLI": {
+          "mass": 3500
+        }
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "S200",
+          "type": "Solid Rocket Boosters",
+          "count": 2,
+          "height": 25,
+          "diameter": 3.2,
+          "empty_mass": 31000,
+          "gross_mass": 236000,
+          "propellant_mass": 205000,
+          "engine_type": "Solid S200",
+          "thrust": 5150,
+          "specific_impulse": 274.5,
+          "burn_time": 128,
+          "propellant": "HTPB / AP"
+        },
+        "second_stage": {
+          "designation": "SC120",
+          "height": 21.39,
+          "diameter": 4.0,
+          "engine_type": "semi-cryogenic",
+          "engine_name": "SCE-200",
+          "engine_count": 1,
+          "propellant": "Kerolox"
+        },
+        "third_stage": {
+          "designation": "C32",
+          "height": 13.545,
+          "diameter": 4.0,
+          "engine_type": "CE-22",
+          "engine_count": 1,
+          "propellant": "LOX / LH2"
+        }
+      },
+      "special_features": [
+        "L110 stage replaced with SC120",
+        "Uses kerolox instead of UDMH",
+        "Higher thrust capability",
+        "More environmentally friendly",
+        "Improved payload capacity to all orbits",
+        "Enhanced third stage with CE-22 engine"
+      ]
+    },
+    "HLVM": {
+      "status": "Under Development",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "description": "Human-rated variant of LVM3",
+      "dimensions": {
+        "height": 43.43,
+        "diameter": 4,
+        "mass": 640000
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": 10000,
+          "altitude": 400,
+          "inclination": 28.5,
+          "crew_capacity": "Up to 3 astronauts"
+        }
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "S200",
+          "type": "Solid Rocket Boosters",
+          "count": 2,
+          "height": 25,
+          "diameter": 3.2,
+          "empty_mass": 31000,
+          "gross_mass": 236000,
+          "propellant_mass": 205000,
+          "engine_type": "Solid S200",
+          "thrust": 5150,
+          "specific_impulse": 274.5,
+          "burn_time": 128,
+          "propellant": "HTPB / AP"
+        },
+        "second_stage": {
+          "designation": "L110",
+          "height": 21.39,
+          "diameter": 4.0,
+          "empty_mass": 9000,
+          "gross_mass": 125000,
+          "propellant_mass": 116000,
+          "engine_type": "Vikas",
+          "engine_count": 2,
+          "thrust": 1598,
+          "specific_impulse": 293,
+          "burn_time": 203,
+          "propellant": "UDMH / N2O4"
+        },
+        "third_stage": {
+          "designation": "C25",
+          "height": 13.545,
+          "diameter": 4.0,
+          "empty_mass": 5000,
+          "gross_mass": 33000,
+          "propellant_mass": 28000,
+          "engine_type": "CE-20",
+          "engine_count": 1,
+          "thrust": 186.36,
+          "specific_impulse": 442,
+          "burn_time": 643,
+          "propellant": "LOX / LH2"
+        }
+      },
+      "development_timeline": {
+        "design_start": "2020",
+        "first_uncrewed_test": "2024",
+        "first_crewed_mission": "2025"
+      }
+    },
+    "SSLV": {
+      "status": "Active",
+      "manufacturer": "NSIL, ISRO",
+      "country": "India",
+      "cost_per_launch": "3.6-4.2 million USD",
+      "dimensions": {
+        "height": 34,
+        "diameter": 2,
+        "mass": 120000
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": 500,
+          "altitude": 500,
+          "inclination": 45
+        },
+        "SSO": {
+          "mass": 300,
+          "altitude": 500
+        }
+      },
+      "launch_history": {
+        "total_launches": 3,
+        "successes": 2,
+        "failures": 1,
+        "first_flight": "2022-08-07",
+        "last_flight": "2024-08-16",
+        "launch_sites": [
+          "Satish Dhawan Space Centre",
+          "Kulasekarapattinam Spaceport"
+        ],
+        "notable_payloads": ["EOS-02", "EOS-07", "EOS-08"]
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "SS1",
+          "propellant_mass": 87000,
+          "engine_type": "solid",
+          "engine_name": "S85",
+          "thrust": 2496,
+          "burn_time": 94.3,
+          "propellant": "HTPB",
+          "diameter": 2
+        },
+        "second_stage": {
+          "designation": "SS2",
+          "propellant_mass": 7700,
+          "engine_type": "solid",
+          "engine_name": "S7",
+          "thrust": 234.2,
+          "burn_time": 113.1,
+          "propellant": "HTPB",
+          "diameter": 2
+        },
+        "third_stage": {
+          "designation": "SS3",
+          "propellant_mass": 4500,
+          "engine_type": "solid",
+          "engine_name": "S4",
+          "thrust": 160,
+          "burn_time": 106.9,
+          "propellant": "HTPB",
+          "diameter": 1.7
+        },
+        "fourth_stage": {
+          "designation": "VTM",
+          "propellant_mass": 50,
+          "engine_type": "liquid",
+          "engine_count": 16,
+          "thrust_per_engine": 0.5,
+          "burn_time": "multiple burns capable",
+          "propellant": "MMH/MON3"
+        }
+      }
+    },
+    "NGLV-SOORYA": {
+      "status": "Under Development",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "dimensions": {
+        "height": 93,
+        "diameter": 5,
+        "mass": {
+          "min": 600000,
+          "max": 1094000
+        }
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": {
+            "payload": 20000
+          }
+        },
+        "GTO": {
+          "mass": {
+            "payload": 9000
+          }
+        },
+        "TLI": {
+          "mass": {
+            "payload": 7000
+          }
+        }
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "LM450",
+          "propellant_mass": 450000,
+          "engine_count": 9,
+          "engine_type": "LME-110",
+          "propellant": "LOX/CH4",
+          "diameter": 5.0
+        },
+        "second_stage": {
+          "designation": "LM120",
+          "propellant_mass": 120000,
+          "engine_count": 2,
+          "engine_type": "LME-110",
+          "propellant": "LOX/CH4",
+          "diameter": 5.0
+        },
+        "third_stage": {
+          "designation": "C32",
+          "propellant_mass": 32000,
+          "engine_type": "CE-20",
+          "thrust": 216,
+          "specific_impulse": 443,
+          "propellant": "LOX/LH2",
+          "diameter": 5.0
+        }
+      },
+      "development_timeline": {
+        "first_flight": "2030+"
+      }
+    },
+    "NGLV-SOORYA-Heavy": {
+      "status": "Under Development",
+      "manufacturer": "ISRO",
+      "country": "India",
+      "dimensions": {
+        "height": 93,
+        "diameter": 5,
+        "mass": {
+          "min": 600000,
+          "max": 1094000
+        }
+      },
+      "payload_capacity": {
+        "LEO": {
+          "mass": {
+            "payload": 30000
+          }
+        },
+        "GTO": {
+          "mass": {
+            "payload": 12000
+          }
+        },
+        "TLI": {
+          "mass": {
+            "payload": 10000
+          }
+        }
+      },
+      "stages": {
+        "first_stage": {
+          "designation": "LM450",
+          "propellant_mass": 450000,
+          "engine_count": 9,
+          "engine_type": "LME-110",
+          "propellant": "LOX/CH4",
+          "diameter": 5.0
+        },
+        "strap_on_boosters": {
+          "designation": "S160",
+          "number": 2,
+          "propellant_mass": 160000,
+          "model": "S160",
+          "thrust": 5151,
+          "burn_time": 128,
+          "propellant": "HTPB"
+        },
+        "second_stage": {
+          "designation": "LM120",
+          "propellant_mass": 120000,
+          "engine_count": 2,
+          "engine_type": "LME-110",
+          "propellant": "LOX/CH4",
+          "diameter": 5.0
+        },
+        "third_stage": {
+          "designation": "C32",
+          "propellant_mass": 32000,
+          "engine_type": "CE-20",
+          "thrust": 216,
+          "specific_impulse": 443,
+          "propellant": "LOX/LH2",
+          "diameter": 5.0
+        }
+      },
+      "development_timeline": {
+        "first_flight": "2035+"
+      }
+    }
+  }
+}
