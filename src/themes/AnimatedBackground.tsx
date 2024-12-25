@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useTheme } from "./ThemeContext";
 
 export const AnimatedBackground: React.FC = () => {
-  const {} = useTheme();
+  useTheme();
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none">

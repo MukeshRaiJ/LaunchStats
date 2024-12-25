@@ -9,7 +9,6 @@ import {
   Award,
 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ThemeProvider, useTheme } from "../themes/ThemeContext";
 
 const countSatellites = (satellites, isIndian = false) => {
   return satellites.reduce((count, sat) => {
@@ -52,24 +51,31 @@ const countSatellites = (satellites, isIndian = false) => {
   }, 0);
 };
 
-const StatsGrid = ({ data }) => {
+interface StatsGridProps {
+  data: any;
+  colors: {
+    glassBg: string;
+    border: string;
+    text: string;
+    subText: string;
+  };
+}
+
+const StatsGrid: React.FC<StatsGridProps> = ({ data, colors }) => {
   const stats = useMemo(() => {
     const totalLaunches = data.launches.length;
     const successfulLaunches = data.launches.filter(
       (l) => l.launchOutcome === "Success"
     ).length;
 
-    // Calculate satellites accurately
     const foreignSatellites = data.launches.reduce((acc, launch) => {
       return acc + countSatellites(launch.payload.satellites, false);
     }, 0);
 
-    // Calculate total payload mass accurately
     const totalMass = data.launches.reduce((acc, launch) => {
       if (launch.payload.totalMass) {
         return acc + launch.payload.totalMass;
       }
-      // If totalMass isn't available, sum individual satellite masses
       return (
         acc +
         launch.payload.satellites.reduce((massAcc, sat) => {
@@ -81,14 +87,12 @@ const StatsGrid = ({ data }) => {
       );
     }, 0);
 
-    // Calculate unique orbits (excluding empty strings and undefined)
     const uniqueOrbits = new Set(
       data.launches
         .map((launch) => launch.orbit)
         .filter((orbit) => orbit && orbit.length > 0)
     ).size;
 
-    // Calculate latest success streak
     let currentStreak = 0;
     for (let i = data.launches.length - 1; i >= 0; i--) {
       if (data.launches[i].launchOutcome === "Success") {
@@ -98,7 +102,6 @@ const StatsGrid = ({ data }) => {
       }
     }
 
-    // Calculate years active
     const years = data.launches.map((launch) =>
       new Date(launch.dateTime.split(" ")[0]).getFullYear()
     );
@@ -152,8 +155,6 @@ const StatsGrid = ({ data }) => {
       },
     ];
   }, [data]);
-
-  const { colors } = useTheme();
 
   return (
     <div className="grid gap-4 mb-8 grid-cols-2 lg:grid-cols-3">
